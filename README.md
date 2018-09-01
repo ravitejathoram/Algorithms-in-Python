@@ -1,5 +1,5 @@
-Question 1 AIM : To develop program for maximum sub array
-a)BRUTEFORCE
+#### Question 1 AIM : To develop program for maximum sub array
+#### a)BRUTEFORCE
 from numpy import asarray
 import numpy as np
 import sys
@@ -44,7 +44,7 @@ def find_maximum_subarray_brute(A):
                 end = j
     return (start, end)
 #==============================================================
-b)RECURSIVE 
+#### b)RECURSIVE 
 # The maximum crossing subarray method for solving the max subarray problem
 def find_maximum_crossing_subarray(A, low, mid, high):
 
@@ -116,7 +116,7 @@ def find_maximum_subarray_recursive(A):
         return None
     return find_maximum_subarray_recursive_helper(A, 0, len(A) - 1)[0]
 #==============================================================
-c) ITERATIVE
+#### c) ITERATIVE
 # The iterative method to solve max subarray problem
 def find_maximum_subarray_iterative(A):
 
@@ -147,8 +147,8 @@ def find_maximum_subarray_iterative(A):
 #==============================================================
 OUTPUT:
  
-QUESTION 2 AIM : To implement Matrix Multiplication
-a)	Square matrix multiplication
+#### QUESTION 2 AIM : To implement Matrix Multiplication
+#### a)	Square matrix multiplication
 def square_matrix_multiply(A, B):
 
     """
@@ -178,7 +178,7 @@ def square_matrix_multiply(A, B):
     return C.astype(int)
 #==========================================================
 
-b)	Strassens Algorithm
+#### b)	Strassens Algorithm
 def square_matrix_multiply_strassens(A, B):
 
     """
